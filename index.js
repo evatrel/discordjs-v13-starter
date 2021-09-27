@@ -87,7 +87,10 @@ client.on('interactionCreate', async interaction => {
 // Login to Discord with your client's token
 client.login(TOKEN); */
 
-const Discord = require('discord.js');
+const Discord = require('discord.js@12.4.5');
 const client = new Discord.Client();
 
+client.on('message', message => {
+	console.log('A message was sent.');
+});
 client.login('ODkyMTgzMDgyNTk2MTcxODQ3.YVJMPg.bhNNIIY8cT5xawPB1tVi3Wdvjyw');
