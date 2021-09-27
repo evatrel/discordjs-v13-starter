@@ -90,6 +90,10 @@ client.login(TOKEN); */
 const Discord = require('discord.js@12.5.3');
 const client = new Discord.Client();
 
+client.on('ready', client => {
+	console.log('Client Build Success');
+});
+
 client.on('message', message => {
 	console.log('A message was sent.');
 });
