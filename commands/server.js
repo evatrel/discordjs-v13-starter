@@ -8,7 +8,7 @@ module.exports = {
 		interaction.reply({ embeds: [
 			new MessageEmbed()
 				.setColor('RANDOM')
-				.setTitle(`Server Name: ${interaction.guild.name}`)
+				.setTitle(`${interaction.guild.name}`)
 				.setDescription(`Total members: ${interaction.guild.memberCount}`)
 		] });
 	},
