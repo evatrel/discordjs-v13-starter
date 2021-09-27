@@ -1,4 +1,4 @@
-const fs = require('fs');
+/* const fs = require('fs');
 const {
 	REST
 } = require('@discordjs/rest');
@@ -85,4 +85,9 @@ client.on('interactionCreate', async interaction => {
 
 
 // Login to Discord with your client's token
-client.login(TOKEN);
+client.login(TOKEN); */
+
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
+client.login('ODkyMTgzMDgyNTk2MTcxODQ3.YVJMPg.bhNNIIY8cT5xawPB1tVi3Wdvjyw');
